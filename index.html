@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sit on chair</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body>
     <div id='navbar'>
@@ -11,9 +12,15 @@
             <div id="logo">
                 <p>SIT <span style="color: #24baa0; font-weight: bold">ON</span> CHAIR</p>
             </div>
-            <div id="nav">
+            <div class = "nav">
                 <ul>
-                    <li><a href="#">O FIRMIE</a></li>
+                    <li><a href="#">O FIRMIE</a>
+                        <ul class = "up-arrow">
+                            <a href="#"><li>Aktualności</li></a>
+                            <a href="#"><li>Nasz team</li></a>
+                            <a href="#"><li>Historia</li></a>
+                        </ul>
+                    </li>
                     <li><a href="#">GALERIA</a></li>
                     <li><a href="#">KONTAKT</a></li>
                 </ul>
@@ -22,29 +29,55 @@
     </div>
     <header>
         <div class="container">
-            <div id="leftHeader">
-                <img src="images/black_chair.png">
-            </div>
-            <div id="rightHeader">
-                <h1>SIT <span style="color: #24baa0; font-weight: bold">ON</span> OUR <span style="color: #24baa0; font-weight: bold">CHAIR</span></h1>
-                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
-                <a class="button" href="http://www.10ways.com">ZOBACZ WIĘCEJ</a>
-            </div>
+            <p class = "previous-Slider"><</p>
+            <ul class="slider">
+            <li>
+                <div class="leftHeader">
+                    <img src="images/black_chair.png">
+                </div>
+                <div class="rightHeader">
+                    <h1>SIT <span style="color: #24baa0; font-weight: bold">ON</span> OUR <span style="color: #24baa0; font-weight: bold">CHAIR</span></h1>
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+                    <a class="button" href="http://www.10ways.com">ZOBACZ WIĘCEJ</a>
+                </div>
+            </li>
+            <li>
+                <div class="leftHeader">
+                    <img src="images/orange.png">
+                </div>
+                <div class="rightHeader">
+                    <h1>SIT <span style="color: #24baa0; font-weight: bold">ON</span> OUR <span style="color: #24baa0; font-weight: bold">CHAIR</span></h1>
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+                    <a class="button" href="http://www.10ways.com">ZOBACZ WIĘCEJ</a>
+                </div>
+            </li>
+            <li>
+                <div class="leftHeader">
+                    <img src="images/red.png">
+                </div>
+                <div class="rightHeader">
+                    <h1>SIT <span style="color: #24baa0; font-weight: bold">ON</span> OUR <span style="color: #24baa0; font-weight: bold">CHAIR</span></h1>
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+                    <a class="button" href="http://www.10ways.com">ZOBACZ WIĘCEJ</a>
+                </div>
+            </li>
+            </ul>
+            <p class = "next-Slider">></p>
         </div>
     </header>
     <div class="container">
-        <div id="content-box">
-            <div id="first-image">
+        <div class = "box-container">
+            <div class = "first-image">
                 <div class="content-square"> 
                     <p class="text-line">Chair CLAIR</p>
                 </div>
             </div>
-            <div id="second-image">
+            <div class = "second-image">
                 <div class="content-square"> 
                     <p class="text-line">Chair MARGARITA</p>
                 </div>
             </div>
-            <div id="third-image">
+            <div class ="third-image">
                 <p class="text-line">Finds all inputs</p>
                 <p class="text-square">Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.<br><br>Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
             </div>
@@ -57,8 +90,14 @@
                 <div class="contenerDiv">
                     <p class="headerParagraph">BASIC PLAN</p>
                     <div class="circle">
-                        <p>85 99</p>
-                        <p>PLN/MSC</p>
+                        <p class = "circle-price">85<sup>99</sup></p>
+                        <p class = "circle-text">PLN/MSC</p>
+                    </div>
+                    <div class="boxes-list-div">
+                        <ul class="boxes-list">
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                        </ul>
                     </div>
                     <a class="button2" href="http:www.google.pl">DOŁĄCZ</a>
                     <div class="rounded">
@@ -67,8 +106,15 @@
                 <div class="contenerDiv">
                     <p class="headerParagraph">STANDARD PLAN</p>
                     <div class="circle">
-                        <p>95 99</p>
-                        <p>PLN/MSC</p>
+                        <p class = "circle-price">95<sup>99</sup></p>
+                        <p class = "circle-text">PLN/MSC</p>
+                    </div>
+                    <div class="boxes-list-div">
+                        <ul class="boxes-list">
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                            <li>Gwarancja 5 lat</li>
+                        </ul>
                     </div>
                     <a class="button2" href="http:www.google.pl">DOŁĄCZ</a>
                     <div class="rounded">
@@ -77,8 +123,16 @@
                 <div class="contenerDiv">
                     <p class="headerParagraph">ADVANCE PLAN</p>
                     <div class="circle">
-                        <p>211 00</p>
-                        <p>PLN/MSC</p>
+                        <p class = "circle-price">211<sup>00</sup></p>
+                        <p class = "circle-text">PLN/MSC</p>
+                    </div>
+                    <div class="boxes-list-div">
+                        <ul class="boxes-list">
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                            <li>Gwarancja 6 lat</li>
+                            <li>Porady projektanta</li>
+                        </ul>
                     </div>
                     <a class="button2" href="http:www.google.pl">DOŁĄCZ</a>
                     <div class="rounded">
@@ -87,5 +141,103 @@
             </div>
         </div>
     </div>
+    <div id="ordering">
+        <div class="container">
+            <div id="order-box-header">
+                <p class="text-line-big left">SKOMPONUJ KRZESŁO</p>
+                <p class="text-line-big right">PODSUMOWANIE</p>
+            </div>
+            <div id="ordering-boxes">
+                <div class="order-box">
+                    <select id="select-type" required>
+                        <option value="" disabled selected>Wybierz rodzaj</option>
+                        <option value="1">Chair Clair</option>
+                        <option value="2">Chair Margarita</option>
+                        <option value="3">Chair Selena</option>
+                    </select>
+                    <select id="select-color" required>
+                        <option value="" disabled selected>Wybierz kolor</option>
+                        <option value="czerwony">czerwony</option>
+                        <option value="czarny">czarny</option>
+                        <option value="pomarańczowy">pomarańczowy</option>
+                    </select>
+                    <select id="select-material" required>
+                        <option value="" disabled selected>Wybierz materiał</option>
+                        <option value="tkanina">tkanina</option>
+                        <option value="skora">skóra</option>
+                    </select>
+                    <div id = "checkbox-area-transport">
+                        <input type='checkbox' name='transport-checkbox'  id="transport-checkbox"/>
+                        <label for="transport-checkbox"></label> 
+                        <p>Transport</p>
+                    </div>
+                </div>
+                <div class="order-box">
+                     <img src="images/red_chair.png">
+                </div>
+                <div class="order-box">
+                    <table id="order-table">
+                        <tr>
+                            <td class="order-table-left strong-text chair-name">Twój fotel</td>
+                            <td class="order-table-right chair-price">&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td class="chair-material">&nbsp</td>
+                            <td class="order-table-right chair-material-price">&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td class="chair-transport">&nbsp</td>
+                            <td class="order-table-right chair-transport-price">&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp</td>
+                            <td class="order-table-right"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp</td>
+                            <td class="order-table-right"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-border-top"> SUMA</td>
+                            <td class="table-border-top chair-summary">&nbsp</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "contact">
+        <div class = "container">
+            <p class="text-line-big">KONTAKT</p>
+            <div id="contact-left">
+                <form>
+                    <input type="text" name="Your-name" placeholder="Imię">
+                    <input type="text" name="Your-email" placeholder="e-mail">
+                    <textarea placeholder="Wiadomość"></textarea>
+                    
+                </form>
+            </div>
+            <div id="contact-right">
+                <img src="images/red_chair.png">
+                <div id = "checkbox-area">
+                    <input type='checkbox' name='contact-checkbox'  id="contact-checkbox" checked/><label for="contact-checkbox"></label> 
+                    <p>Zgadzam się na przetwarzanie danych osobowych</p>
+                </div>
+                <input class="button3" type="submit" size="5" value="WYŚLIJ">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class = "container">
+            <p class="footer-copyright">Copyright 2014 | All Rights Reserved - Sit On Chair</p>
+            <p class="footer-big">SIT <strong>ON</strong> CHAIR</p>
+            <div id="footer-social">
+                <img src="images/flickr.png">
+                <img src="images/vimeo.png">
+                <img src="images/pinterest.png">
+                <img src="images/twitter.png">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
